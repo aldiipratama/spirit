@@ -1,16 +1,16 @@
 let nama, val;
 const url_string = document.URL;
 const url = new URL(url_string);
-let doi;
+let sender;
 
 if (url.searchParams.get('in') != null) {
-  doi = url.searchParams.get('in');
+  Sender = url.searchParams.get('in');
 } else {
-  doi = "doi";
+  Sender = "doi";
 }
 
 let footer = document.getElementById("credit");
-footer.innerHTML = doi;
+footer.innerHTML = sender;
 footer.href = "https://www.instagram.com/rinaldi_r7/";
 
 function time() {
@@ -50,7 +50,7 @@ function makan() {
 function selesai() {
   const teks = document.getElementById('teks');
   const btn = document.querySelector('.tombol');
-  teks.innerHTML = `Semangat ${doi} <i
+  teks.innerHTML = `Semangat ${sender} <i
   class="fas fa-heart text-danger animate__animated animate__heartBeat animate__repeat-3"></i>`;
   btn.classList.add('d-none');
   teks.classList.remove('d-none');  
