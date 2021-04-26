@@ -10,7 +10,7 @@ if (url.searchParams.get('in') != null) {
 }
 
 let footer = document.getElementById("credit");
-footer.innerHTML = Faisal;
+footer.innerHTML = doi;
 footer.href = "https://www.instagram.com/rinaldi_r7/";
 
 function time() {
