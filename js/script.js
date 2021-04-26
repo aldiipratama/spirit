@@ -6,11 +6,11 @@ let doi;
 if (url.searchParams.get('in') != null) {
   doi = url.searchParams.get('in');
 } else {
-  doi = "faisal";
+  doi = "doi";
 }
 
 let footer = document.getElementById("credit");
-footer.innerHTML = doi;
+footer.innerHTML = Faisal;
 footer.href = "https://www.instagram.com/rinaldi_r7/";
 
 function time() {
